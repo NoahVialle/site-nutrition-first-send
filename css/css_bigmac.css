@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/* pour les écrans */
+@media screen {
+  html {
+    /*font*/
+    font-family: roboto, sans-serif;
+    /*taille font*/
+    font-size: 125%;
+    /*couleur font*/
+    color: #5c933b;
+    /*couleur background*/
+    background-color: #ffffff;
+    /*couleur lien*/
+  }
+  a:link {
+    color: #f4900c;
+  }
+  a:visited {
+    color: #f4900c;
+  }
+}
+footer {
+  background-color: #ffe41b2c;
+}
+
+/* pour l'impression */
+@media print {
+  html {
+    font-family: "Roboto Slab", serif;
+  }
+  /*inclue lien pour l impression*/
+  a[href^="http"]::after {
+    content: " [URL : " attr(href) "]";
+  }
+}
